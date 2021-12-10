@@ -193,6 +193,7 @@ const Home: NextPage = () => {
               alt="Nate Arnold - Senior Software Engineer @ Ready"
               src="/nate.png"
               height={1506}
+              priority
               width={1600}
             />
           </div>
