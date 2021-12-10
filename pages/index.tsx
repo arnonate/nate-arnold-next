@@ -81,7 +81,7 @@ const Home: NextPage = () => {
                 </svg>
               </div>
 
-              <h1>I'm Nate!</h1>
+              <h1>{`I'm Nate!`}</h1>
             </header>
 
             <p>
