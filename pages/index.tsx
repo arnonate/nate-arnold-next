@@ -6,8 +6,8 @@ import Script from "next/script";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
-  const metaTitle = "Nate Arnold | Senior Software Engineer @ Ready";
-  const metaDescription = "Home for all the things Nate Arnold. 💻 🚴...";
+  const metaTitle = "Nate Arnold | Senior Software Engineer @ Exos";
+  const metaDescription = "Home for all the things Nate Arnold. 💻 🎾 🚴...";
   const metaImage = "https://natearnold.me/screenshot.png";
 
   return (
@@ -86,13 +86,10 @@ const Home: NextPage = () => {
 
             <p>
               Senior Software Engineer at{" "}
-              <a href="https://www.getready.com/">Ready</a>.
+              <a href="https://www.teamexos.com/">EXOS</a>.
               <br />
               Partner at <a href="https://midcoast.io">Midcoast Collective</a>
               .
-              <br />
-              Cyclist and Creator at{" "}
-              <a href="https://amateurcyclist.cc">The Amateur Cyclist</a>.
               <br />
               Lifelong Learner and Educator.
               <br />
@@ -190,7 +187,7 @@ const Home: NextPage = () => {
 
           <div className={styles.covatar}>
             <Image
-              alt="Nate Arnold - Senior Software Engineer @ Ready"
+              alt="Nate Arnold - Senior Software Engineer @ Exos"
               src="/nate.png"
               height={1506}
               priority
