@@ -8,7 +8,7 @@ import styles from "../styles/Home.module.css";
 const Home: NextPage = () => {
   const metaTitle = "💙 Nate Arnold | Web Developer Kansas City, MO | Senior Software Developer @ Exos 💙";
   const metaDescription = "💙 Nate Arnold | Web Developer Kansas City, MO | Senior Software Developer @ Exos | Lifelong Learner and Educator 💙";
-  const metaImage = "https://natearnold.me/screenshot.png";
+  const metaImage = "https://natearnold.me/screenshot2.png";
 
   return (
     <>
