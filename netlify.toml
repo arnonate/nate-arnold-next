@@ -1,0 +1,4 @@
+# A single static page: no build, publish public/ as-is.
+[build]
+  command = ""
+  publish = "public"

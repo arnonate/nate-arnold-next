@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nate Arnold Resume</title>
+  <meta name="author" content="Nate Arnold">
+  <!--
+    Source for both resume PDFs. Run resume/build.sh to regenerate them.
+    The phone number is never stored here: build.sh passes it in from the
+    gitignored resume/.phone file, and only for the private copy.
+  -->
+  <style>
+    @page { size: Letter; margin: 0.4in 0.55in; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; color: #1c1c1e;
+      font: 9.3pt/1.33 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    a { color: inherit; text-decoration: none; }
+    header { border-bottom: 2px solid #1c1c1e; padding-bottom: 8pt; margin-bottom: 10pt; }
+    h1 { font-size: 22pt; line-height: 1.1; margin: 0; letter-spacing: -0.01em; }
+    .title { font-size: 11.5pt; color: #4b4b52; margin: 2pt 0 6pt; }
+    .contact { font-size: 9.5pt; color: #4b4b52; display: flex; flex-wrap: wrap; gap: 2pt 14pt; }
+    h2 {
+      font-size: 9.5pt; letter-spacing: 0.12em; text-transform: uppercase; color: #2456c8;
+      margin: 11pt 0 5pt; padding-bottom: 2pt; border-bottom: 0.75pt solid #d6d6dc;
+    }
+    p { margin: 0; }
+    .job { margin: 0 0 7pt; break-inside: avoid; }
+    .job-head { display: flex; justify-content: space-between; gap: 12pt; align-items: baseline; }
+    .job h3 { font-size: 10.5pt; margin: 0; }
+    .org { font-weight: 600; color: #4b4b52; }
+    .meta { font-size: 9pt; color: #6b6b73; white-space: nowrap; }
+    ul { margin: 3pt 0 0; padding-left: 13pt; }
+    li { margin: 1pt 0; }
+    .skills { display: grid; grid-template-columns: 1.05in 1fr; gap: 3pt 10pt; }
+    .skills dt { font-weight: 600; }
+    .skills dd { margin: 0; color: #2e2e33; }
+    .edu { display: grid; grid-template-columns: 1fr auto; gap: 2pt 12pt; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nate Arnold</h1>
+    <p class="title">Senior Full Stack and AI Engineer</p>
+    <div class="contact">
+      <span class="phone" hidden></span>
+      <a href="mailto:hello@natearnold.me">hello@natearnold.me</a>
+      <a href="https://linkedin.com/in/arnonate">linkedin.com/in/arnonate</a>
+      <a href="https://natearnold.me">natearnold.me</a>
+      <span>Kansas City, MO</span>
+    </div>
+  </header>
+
+  <h2>Summary</h2>
+  <p>Full-stack software engineer with 15+ years shipping production software in healthcare, education, construction tech, fitness and wellness, pharma, ecommerce, and SaaS. Strongest in React, TypeScript, Next.js, Node.js, Laravel, and GraphQL on PostgreSQL and AWS. Current focus is LLM integration, agentic AI systems, RAG, and AI automation that holds up in production. Comfortable owning a feature end to end, from data model and API to UI, mobile, and deploy. Former high school science teacher on a constant quest to learn and level up. I see code as a way to solve real problems and find joy in being part of that process.</p>
+
+  <h2>Experience</h2>
+
+  <div class="job">
+    <div class="job-head"><h3>Senior Software Engineer · <span class="org">OpenSpace</span></h3><span class="meta">11/2025 – Present · San Francisco, CA</span></div>
+    <ul>
+      <li>Build full-stack features for an AI-powered construction site documentation platform used by thousands of construction sites</li>
+      <li>Work in a TypeScript stack: React and Next.js on the front end, Node.js services on the back, PostgreSQL and AWS underneath</li>
+      <li>Build pipeline features that turn 360-degree site captures into structured progress, schedule, and QA data, processing hundreds of thousands of images a month with computer vision and LLM steps in place of manual tracking</li>
+      <li>Partner with ML, product, and design to ship AI features with human review and evaluation built in</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3>Independent Consultant</h3><span class="meta">2024 – Present</span></div>
+    <ul>
+      <li>Build full-stack apps, LLM features, and agentic workflows for clients, owning each project from scoping through launch and support</li>
+      <li>Build RAG assistants and document pipelines with LangChain, LangGraph, pgvector, and MCP tools that connect models to client data</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3>Senior Full Stack Software Engineer · <span class="org">EXOS</span></h3><span class="meta">02/2022 – 11/2025 · Phoenix, AZ</span></div>
+    <ul>
+      <li>Owned features end to end on the EXOS member app and coaching platform, used by tens of thousands of members across Fortune 500 wellness programs, pro athletes, and military clients</li>
+      <li>Built React Native and React/TypeScript front ends on a GraphQL microservice backend running on AWS Lambda, with PostgreSQL, DynamoDB, and Redis</li>
+      <li>Led LLM coaching features that cut coach prep time by around 27%. Built on Claude and OpenAI APIs with structured outputs and function calling, they generate personalized workout, nutrition, and recovery suggestions</li>
+      <li>Shipped paid features and A/B tests with product and design in two-week sprints, improved CI/CD on GitHub Actions, and mentored 14 junior engineers through code review and pairing</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3>Partner and Full Stack Engineer · <span class="org">Midcoast Collective</span></h3><span class="meta">2020 – 2024</span></div>
+    <ul>
+      <li>Co-ran a small consultancy that delivered 15+ projects: websites, serverless Jamstack apps, and AI integrations for clients in healthcare, education, ecommerce, and SaaS</li>
+      <li>Handled each project end to end: scoping, architecture, build, launch, and support, mostly on Next.js, Gatsby, Nuxt, Node.js, and Laravel with Vercel, Netlify, and AWS</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3>Senior Software Engineer · <span class="org">Ready</span></h3><span class="meta">10/2020 – 02/2022 · New Orleans, LA</span></div>
+    <ul>
+      <li>Designed and delivered an electronic medical records (EMR) platform used by 15+ provider practices, built with TypeScript, React, and Apollo GraphQL</li>
+      <li>Shipped patient charting, scheduling, and clinical documentation features across the React front end and the GraphQL API, supporting thousands of patient encounters per month</li>
+      <li>Designed multi-tenant data models and role-based access, so one deployment could serve many practices while meeting HIPAA requirements</li>
+      <li>Owned schema migrations, query tuning, and reliability work that cut patient chart load times from about 2s to under 500ms</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3>Software Engineer III · <span class="org">EquipmentShare</span></h3><span class="meta">04/2017 – 10/2020 · Columbia, MO</span></div>
+    <ul>
+      <li>Built rental and fleet management features in React and Redux for a construction equipment platform used by contractors across North America</li>
+      <li>Helped build a shared design system and component library adopted by several product teams to keep the UI consistent and ship faster</li>
+      <li>Worked on Node.js and Firebase/GCP services that moved real-time location and usage data from thousands of connected machines into dashboards and reports</li>
+      <li>Shipped React Native screens for field crews on job sites with poor signal</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3>Hybrid Mobile Developer · <span class="org">Intouch Solutions</span></h3><span class="meta">06/2016 – 04/2017 · Shreveport, LA</span></div>
+    <ul>
+      <li>Built custom iPad apps for Fortune 100 pharma clients using Angular and PhoneGap, used by hundreds of sales reps in meetings with doctors</li>
+      <li>Wrote native iOS plugins in Objective-C where PhoneGap fell short</li>
+      <li>Worked inside pharma's medical, legal, and regulatory (MLR) review process so every screen and claim was approved before release</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3>Client-Side Software Engineer · <span class="org">The Nerdery</span></h3><span class="meta">01/2014 – 05/2016 · Kansas City, MO</span></div>
+    <ul>
+      <li>Built pixel-perfect, responsive front ends for a dozen major brands in ecommerce, media, finance, and healthcare at a software consultancy</li>
+      <li>Worked in HTML, CSS, JavaScript, jQuery, PHP, and WordPress, with early React and Angular projects</li>
+      <li>Delivered on tight agency timelines alongside designers, project managers, and QA</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3>Biology Instructor · <span class="org">St. Joseph School District</span></h3><span class="meta">08/2003 – 07/2012 · Overland Park, KS</span></div>
+    <ul>
+      <li>Taught Biology, Genetics, Microbiology, Ecology, and Biomedical Science for nine years, and coached the high school tennis team</li>
+      <li>Designed the curriculum, labs, and assessments for each course</li>
+      <li>Explaining hard ideas to teenagers every day is still how I approach mentoring, code review, and conversations with non-technical stakeholders</li>
+    </ul>
+  </div>
+
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>AI / LLM / Agentic</dt><dd>Claude, OpenAI GPT-5 / GPT-6, Gemini, Ollama (local inference), LangChain, LangGraph, RAG, embeddings and vector search, agentic workflows and multi-agent systems, tool use and function calling, prompt engineering, LLM evaluation and guardrails, MCP (Model Context Protocol)</dd>
+    <dt>Frontend</dt><dd>React, Next.js, Vue, Nuxt, Gatsby, Redux, TanStack Query, Apollo Client, GraphQL, Tailwind CSS, accessibility (WCAG)</dd>
+    <dt>Backend</dt><dd>Node.js, Express, NestJS, Laravel, CodeIgniter, Python (FastAPI, Django), WordPress</dd>
+    <dt>Mobile</dt><dd>React Native, Expo, PhoneGap / Cordova, Objective-C, iOS</dd>
+    <dt>Architecture</dt><dd>REST and GraphQL API design, microservices, serverless, event-driven systems, background jobs, authentication (OAuth 2.0, JWT, SSO), caching, rate limiting, WebSockets</dd>
+    <dt>Cloud and DevOps</dt><dd>AWS (Lambda, API Gateway, S3, RDS, DynamoDB, SQS, CloudFront), GCP, Firebase, Vercel, Netlify, Docker, GitHub Actions, CI/CD</dd>
+    <dt>Databases</dt><dd>PostgreSQL, MySQL, MongoDB, Redis, DynamoDB, Firestore, Elasticsearch, pgvector</dd>
+    <dt>Industries</dt><dd>Healthcare, Education, Construction Tech, Fitness and Wellness, Pharmaceutical, Ecommerce, SaaS</dd>
+  </dl>
+
+  <h2>Education</h2>
+  <div class="edu">
+    <p><strong>M.S. in Science Education</strong> · Northwest Missouri State University</p><span class="meta">2005 – 2008</span>
+    <p><strong>B.S. in Biology (Secondary Science Education)</strong> · Missouri Western State University</p><span class="meta">1999 – 2002</span>
+  </div>
+  <script>
+    // Private copy only: build.sh passes the phone number as ?phone=...
+    const phone = new URLSearchParams(location.search).get("phone");
+    if (phone) {
+      const el = document.querySelector(".phone");
+      el.textContent = phone;
+      el.hidden = false;
+    }
+  </script>
+</body>
+</html>
