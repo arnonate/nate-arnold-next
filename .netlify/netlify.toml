@@ -1,0 +1,32 @@
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[[plugins]]
+origin = "ui"
+package = "@netlify/plugin-nextjs"
+pinned_version = "3"
+
+[plugins.inputs]
+
+[build]
+publish = "/Users/natearnold/Code/nate-arnold-next/public"
+publishOrigin = "config"
+commandOrigin = "ui"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
